@@ -4,16 +4,16 @@
   box-sizing: border-box;
 }
 
-:root{
-  --text-color:#FFF;
+:root {
+  --text-color: #FFF;
   --color-background: url(assets/bg-mobile.jpg);
-  --strock-color:rgba(255, 255, 255, 0.5);
-  --surface-color:rgba(255, 255, 255, 0.1);
+  --strock-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.1);
   --switch-time: url(assets/sun.svg)
 }
 
-.light{
+.light {
   --text-color: #000;
   --color-background: url(assets/bg-mobile-light.jpg);
   --strock-color: rgba(0, 0, 0, 0.2);
@@ -36,7 +36,8 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0;
   padding: 0 24px;
 }
@@ -57,13 +58,13 @@ body * {
 }
 
 /* Switch */
-.switch{
+.switch {
   display: flex;
   justify-content: center;
   margin: 30px 0 5px 0;
 }
 
-.switch-componets{
+.switch-componets {
   position: relative;
   width: 64px;
   display: flex;
@@ -71,7 +72,7 @@ body * {
   align-items: center;
 }
 
-.switch button{
+.switch button {
   width: 32px;
   height: 32px;
   background: white var(--switch-time) no-repeat center;
@@ -82,7 +83,7 @@ body * {
   left: 0;
 }
 
-.switch span{
+.switch span {
   display: flex;
   width: 64px;
   height: 24px;
@@ -93,7 +94,7 @@ body * {
   border-radius: 999px;
 }
 
-.light .switch button{
+.light .switch button {
   right: 0;
   left: initial;
 }
@@ -109,7 +110,7 @@ ul {
   padding: 24px 0;
 }
 
-li a{
+li a {
   display: flex;
   justify-content: center;
   padding: 16px 24px;
@@ -121,14 +122,14 @@ li a{
   transition: background 0.2s;
 }
 
-li a:hover{
+li a:hover {
   border: 1.5px solid var(--text-color);
   background: var(--surface-color-hover);
 }
 
 /* Icon Redes Social */
 
-#redes__social{
+#redes__social {
   display: flex;
   justify-content: center;
   padding: 24px 0;
@@ -136,7 +137,7 @@ li a:hover{
   font-size: 30px;
 }
 
-#redes__social ion-icon{
+#redes__social ion-icon {
   padding: 10px;
 }
 
@@ -146,12 +147,12 @@ li a:hover{
 }
 
 /* Footer */
-#end__page{
+#end__page {
   padding: 25px 0;
   font-size: 14px;
 }
 
-#end__page div{
+#end__page div {
   display: flex;
   justify-content: center;
   align-items: center;
