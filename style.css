@@ -28,6 +28,7 @@ body {
   background-position: top center;
   background-size: cover; */
   background: var(--color-background) no-repeat top center/cover;
+  height: calc(100vh - 62px);
 }
 
 body * {
@@ -157,4 +158,15 @@ li a:hover {
   justify-content: center;
   align-items: center;
   gap: 4px;
+}
+
+/* media queries */
+@media(min-width: 700px) {
+  :root {
+    --color-background: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --color-background: url(./assets/bg-desktop-light.jpg);
+  }
 }
